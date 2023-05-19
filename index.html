@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="es-419">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="sweetalert2.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <script src="sweetalert2.js"></script>
+        <script src="script.js" type="text/javascript" defer></script>
+        <title>Encriptador de texto</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="cabecera">
+                <img class="logo" src="img/logo.png" alt="logo de Alura">
+                <p class="titulo">Encriptador de texto</p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <textarea class="textoingresado" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="info">
+                    <img id="advertencia" src="img/advertencia.png" alt="Signo de advertencia">
+                    <p id="info-texto">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="botonencriptar" onclick="botonencriptar()"> Encriptar </button>
+                    <button class="botondesencriptar" onclick="botondesencriptar()"> Desencriptar </button>
+                </div>                
+            </section>
+            <section>
+                <textarea class="textoresultado" cols="20" rows="10"></textarea>    
+                <button id="botoncopiar" onclick="copiar()"> Copiar </button>  
+            </section>
+        </main>
+        <footer> 
+            <p class="copyright">Copyright &copy; <span id="current-year"></span> Juan Manuel Castilla, todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
