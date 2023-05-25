@@ -200,6 +200,10 @@ footer{
         align-items: center;
     }
 
+    .resultado {
+        width: -webkit-fill-available;
+    }
+
     .textoresultado {
         background-image: url(img/texto.png);
         background-position: center;
@@ -270,6 +274,10 @@ footer{
     .botondesencriptar, .botonencriptar{
         margin: .5rem 0;
         width: 90%;
+    }
+
+    .resultado {
+        width: -webkit-fill-available;
     }
 
     .textoresultado {
