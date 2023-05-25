@@ -1,58 +1,70 @@
-*{
+* {
     background: #F3F5FC;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    line-height: 150%;
 }
 
-.cabecera {
-    margin: 40px;
+body {
+    width: 100%;
+    height: 910px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* CABECERA */
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
 }
 
 .logo {
-    margin-left: 40px;
-    width: 120px;
-    height: 48px;
+    margin-left: 35px;
+    width: 106px;
+    height: 42px;
     float: left;
 }
 
 .titulo {
-    font-family: 'Quicksand', sans-serif; 
+    font-family: 'Quicksand', sans-serif;
     text-align: left;
     font-weight: bold;
-    font-size: 3rem; 
-    background: #202020; 
-    -webkit-background-clip: text; 
-    -moz-background-clip: text; 
-    background-clip: text; 
-    color: transparent; 
+    font-size: 3rem;
+    background: #202020;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
     text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
 }
 
+/* CUERPO */
 main {
     display:flex;
     flex-direction: row;
-    margin-left: 8rem;
-
+    margin-left: 5rem;
 }
 
 .textoingresado {
     display: flex;
     justify-content: center;
-    margin: 0 40px;
-    height: 645px;
-    width: 680px;
+    margin: 5%;
+    height: 500px;
+    width: 95%;
     border: none;
     color: #0A3871;
-    margin-top: 80px;
     text-transform: lowercase;
-    padding: 2rem; 
+    padding: 5%;
     resize: none;
 }
 
 ::placeholder:first { color: #0A3871;}
-    .textoingresado:focus { 
+    .textoingresado:focus {
         outline: none;
     }
 
@@ -74,6 +86,7 @@ main {
 .botones{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .botonencriptar, .botondesencriptar {
@@ -81,10 +94,11 @@ main {
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
-    cursor:pointer; 
-    font-size:1rem;
+    cursor: pointer;
+    font-size: 1rem;
     width: 328px;
     height: 67px;
+    justify-content: space-around;
     margin-left: 24px;
     transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
@@ -101,9 +115,16 @@ main {
     -moz-transform:translate(0px,5px);
 }
 
+.ingresado, .resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .textoresultado {
     display:flex;
-    align-items: flex-end;;
+    align-items: flex-start;
     background: #FFFFFF;
     background-image: url(img/munheco.png);
     background-position: center;
@@ -113,79 +134,78 @@ main {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     color: #495057;
     font-size: 1.5rem;
-    width: 400px;
-    height: 880px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 2rem; 
+    width: 380px;
+    height: 85%;
+    padding: 5%;
+    margin-left: 10%;
     resize: none;
 }
 
-.textoresultado:focus { 
+.textoresultado:focus {
     outline: none;
 }
 
 #botoncopiar{
-    position: absolute;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 1rem;
     width: 328px;
     height: 67px;
-    left: 66.6rem;
-    top: 58rem;
-    color:#0A3871;
-    font-size:1rem;
-    border:1px solid #0A3871;
-    border-radius: 24px;
+    padding: 25px 0;
+    margin-top: 5%;
+    margin-left: 10%;
     transition: .5s, color .10s;
-    -webkit-transition: .5s, color .10s;
     -moz-transition: .5s, color .10s;
 }
 
+/* PIE DE PAGINA */
 footer{
+    width: 100%;
     color:black;
     font-family: 'Quicksand';
     font-weight: bold;
     text-align: center;
-}
-
-.copyright {
+    margin-top: 50px;
     font-size: .8rem;
-    margin: 1rem 0 0 5rem;
-    padding: 0.5rem;
 }
 
-@media screen and (max-width:768px){
+/*----------------Estilos especiales para Tablets----------------*/
+@media screen and (min-width: 600px) and (max-width: 1024px){
     .logo {
         margin-left: 40px;
-        margin-top: 73px,
-    } 
+    }
 
     main {
         flex-direction: column;
         align-items: center;
         margin-left: 0.5rem;
-        margin-right:0.5rem;
+        margin-right: 0.5rem;
     }
 
     .textoingresado {
-        padding: 0.5rem; 
-        width:90%;
+        padding: 0.5rem;
+        width: 90%;
     }
 
-    .info{ 
+    .info{
         padding: 2rem 0 1rem 4rem;
     }
 
     .botones{
-        margin:0 2.5rem;
-        justify-content: space-between;
+        margin:0 auto;
+        justify-content: center;
         align-items: center;
     }
-    
+
     .textoresultado {
         background-image: url(img/texto.png);
         background-position: center;
-        margin: 2rem;
-        width: 650px;
+        margin: 20px 0 0 0;
+        width: 90%;
+        padding: 10px;
     }
 
     .texto img{
@@ -193,89 +213,50 @@ footer{
     }
 
     #botoncopiar{
-        position: absolute;
-        width: 630px;
+        width: 328px;
         height: 67px;
-        left: 4.5rem;
-        top: 115rem;
+        margin: 1rem 0 1rem;
     }
 
-    .copyright {
-        margin: 0;
+    footer {
+        text-align: center;
+        margin: 10px 0 0 0;
+        padding: 10px;
     }
 }
 
-@media screen and (width:1024px){
+/*----------------Estilos especiales para Tablets----------------*/
+@media screen and (min-width: 300px) and (max-width: 599px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: center;
+        padding: 0px;
+        gap: 0px;
+    }
+
     .logo {
-        margin-left: 40px;
-    } 
+        margin-left: 0px;
+    }
+
+    .titulo {
+        text-align: center;
+    }
 
     main {
         flex-direction: column;
         align-items: center;
         margin-left: 0.5rem;
-        margin-right:0.5rem;
+        margin-right: 0.5rem;
     }
 
     .textoingresado {
-        padding: 1rem; 
-        width: 900px;
+        padding: 0.5rem;
+        width: 85%;
     }
 
-    .info{ 
-        padding: 2rem 0 1rem 3rem;
-    }
-
-    .botones{
-        margin:0 2.5rem;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .botonencriptar {
-        width: 450px;
-    }
-    
-    .botondesencriptar{
-        width: 450px;
-        
-    }
-    
-    .textoresultado {
-        background-image: url(img/texto.png);
-        background-position: center;
-        margin: 4rem 2.5rem 2.5rem 3rem;
-        width: 880px;
-    }
-
-    #botoncopiar{
-        position: absolute;
-        width: 885px;
-        height: 67px;
-        left: 5rem;
-        top: 118rem;
-    }
-
-    .copyright {
-        font-family: 'Quicksand';
-        margin: 0;
-    }
-}
-
-@media screen and (min-width:300px) and (max-width:425px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0.5rem;
-        margin-right:0.5rem;
-    }
-
-    .textoingresado {
-        padding: 0.5rem; 
-        width:85%;
-    }
-
-    .info{ 
+    .info{
         padding: 2rem 0 1rem 4rem;
     }
 
@@ -283,20 +264,19 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-left: 1.6rem;
-        width:90%;
+        width: 100%;
     }
 
-    .botondesencriptar{
+    .botondesencriptar, .botonencriptar{
+        margin: .5rem 0;
+        width: 90%;
+    }
+
+    .textoresultado {
+        background-image: url(img/texto.png);
+        background-position: center;
+        width: 95%;
         margin-left: 0;
-        margin-top: 1rem;
-    }
-
-    .textoresultado {
-        background-image: url(img/texto.png);
-        background-position: center;
-        margin: 2rem 1rem 0 2rem;
-        width: 270px;
     }
 
     .texto img{
@@ -304,19 +284,13 @@ footer{
     }
 
     #botoncopiar{
-        position: absolute;
-        width: 75%;
+        width: 95%;
         height: 67px;
-        left: 3.7rem;
-        top: 120rem;
+        margin-left: 0;
     }
 
     footer{
         text-align: center;
-        padding-top:2rem;
-    }
-
-    .copyright {
-        margin: 0;
+        margin: 10px 0 0;
     }
 }
