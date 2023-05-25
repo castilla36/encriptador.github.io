@@ -71,7 +71,6 @@ function copiar(){
     textoresultado.value="";
     Swal.fire({
         title: 'Texto Copiado!',
-        icon: 'success'
     });
 }
 
