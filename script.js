@@ -70,7 +70,8 @@ function copiar(){
     navigator.clipboard.writeText(textoresultado.value);
     textoresultado.value="";
     Swal.fire({
-        title: 'Texto Copiado!'
+        title: 'Texto Copiado!',
+        icon: 'success'
     });
 }
 
