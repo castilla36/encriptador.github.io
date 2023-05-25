@@ -5,7 +5,7 @@
   grid-template-columns: min-content auto min-content;
   padding: 1em;
   overflow-y: hidden;
-  background: #fff;
+  background: #F3F5FC;
   box-shadow: 0 0 1px hsla(0, 0%, 0%, 0.075), 0 1px 2px hsla(0, 0%, 0%, 0.075), 1px 2px 4px hsla(0, 0%, 0%, 0.075), 1px 3px 8px hsla(0, 0%, 0%, 0.075), 2px 4px 16px hsla(0, 0%, 0%, 0.075);
   pointer-events: all;
 }
@@ -258,7 +258,7 @@
   padding: 0 0 1.25em;
   border: none;
   border-radius: 5px;
-  background: #fff;
+  background: #F3F5FC;
   color: #545454;
   font-family: inherit;
   font-size: 1rem;
@@ -333,12 +333,12 @@
   border: 0;
   border-radius: 0.25em;
   background: initial;
-  background-color: #7066e0;
+  background-color: #0A3871;
   color: #fff;
   font-size: 1em;
 }
 .swal2-styled.swal2-confirm:focus {
-  box-shadow: 0 0 0 3px rgba(112, 102, 224, 0.5);
+  box-shadow: 0 0 0 3px rgba(10, 56, 113, 0.5);
 }
 .swal2-styled.swal2-deny {
   border: 0;
@@ -496,7 +496,7 @@
 
 .swal2-range {
   margin: 1em 2em 3px;
-  background: #fff;
+  background: #F3F5FC;
 }
 .swal2-range input {
   width: 80%;
@@ -546,7 +546,7 @@
 .swal2-checkbox {
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #F3F5FC;
   color: inherit;
 }
 .swal2-radio label,
