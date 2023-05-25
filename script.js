@@ -11,7 +11,7 @@ function validarTexto(){
     let verificador=textoEscrito.match(/^[a-z- ]*$/);
     if(!verificador||verificador===0){
         Swal.fire("Solo se permiten letras minúsculas y sin acentos");
-        location.reload();
+        document.querySelector(".textoingresado").value = "";
         return true;
     }
 }
