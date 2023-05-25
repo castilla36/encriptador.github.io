@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
 <html lang="es-419">
     <head>
         <meta charset="UTF-8">
@@ -11,20 +13,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
         <script src="sweetalert2.js"></script>
-        <script src="script.js" type="text/javascript" defer></script>
+        <script src="script.js" defer></script>
         <title>Encriptador de texto</title>
     </head>
 
     <body>
         <header>
-            <div class="cabecera">
-                <img class="logo" src="img/logo.png" alt="logo de Alura">
-                <p class="titulo">Encriptador de texto</p>
-            </div>
+            <img class="logo" src="img/logo.png" alt="logo de Alura">
+            <p class="titulo">Encriptador de texto</p>
         </header>
         <main>
-            <section>
-                <textarea class="textoingresado" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <section class="ingresado">
+                <textarea class="textoingresado" cols="30" rows="10" placeholder="Ingrese el texto aqui &#10; (Solo letras minúsculas y sin acentos)"></textarea>
                 <div class="info">
                     <img id="advertencia" src="img/advertencia.png" alt="Signo de advertencia">
                     <p id="info-texto">Solo letras minúsculas y sin acentos</p>
@@ -34,13 +34,13 @@
                     <button class="botondesencriptar" onclick="botondesencriptar()"> Desencriptar </button>
                 </div>                
             </section>
-            <section>
-                <textarea class="textoresultado" cols="20" rows="10"></textarea>    
+            <section class="resultado">
+                <textarea class="textoresultado" cols="20" rows="10" disabled></textarea>    
                 <button id="botoncopiar" onclick="copiar()"> Copiar </button>  
             </section>
         </main>
         <footer> 
-            <p class="copyright">Copyright &copy; <span id="current-year"></span> Juan Manuel Castilla, todos los derechos reservados.</p>
+            <p>Copyright &copy; <span id="current-year"></span> Juan Manuel Castilla, todos los derechos reservados.</p>
         </footer>
     </body>
 </html>
