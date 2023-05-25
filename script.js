@@ -15,7 +15,7 @@ function validarTexto(){
             icon: 'warning'
         });
         document.querySelector(".textoingresado").value = "";
-        return true;
+        // return true;
     }
 }
 
