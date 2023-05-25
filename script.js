@@ -10,7 +10,10 @@ function validarTexto(){
     let textoEscrito=document.querySelector(".textoingresado").value;
     let verificador=textoEscrito.match(/^[a-z- ]*$/);
     if(!verificador||verificador===0){
-        Swal.fire("Solo se permiten letras minúsculas y sin acentos");
+        Swal.fire({
+            title: 'Solo se permiten letras minúsculas y sin acentos',
+            icon: 'warning'
+        });
         document.querySelector(".textoingresado").value = "";
         return true;
     }
@@ -66,7 +69,9 @@ function copiar(){
     textoresultado.select();
     navigator.clipboard.writeText(textoresultado.value);
     textoresultado.value="";
-    Swal.fire('Texto Copiado!');
+    Swal.fire({
+        title: 'Texto Copiado!'
+    });
 }
 
 /*-----------Año automatico en footer-----------*/
